@@ -22,22 +22,37 @@
 }*/
 #container {
   display: grid; /* グリッドレイアウト */
-  grid-template-rows: 100px 50px;
-  grid-template-columns: 150px 1fr;
+  grid-template-rows: 200px 2000px 200px;
+  grid-template-columns: 200px 1fr 200px;
   grid-template-areas:
-        "areaA areaB"
-        "areaA areaC";
+        "areaA areaA areaA"
+        "areaB areaC areaD"
+        "areaE areaE areaE";
 }
 
 #itemA {
   grid-area: areaA;
   background: #f88;
+  margin-bottom: 20px;
+  border-radius: 50px 50px 0 0;
 }
 #itemB {
   grid-area: areaB;
   background: #8f8;
+  margin-right: 20px;
 }
 #itemC { 
   grid-area: areaC;
   background: #88f;
+}
+#itemD {
+  grid-area: areaD;
+  background: #834;
+  margin-left: 20px;
+}
+#itemE {
+  grid-area: areaE;
+  background: salmon;
+  margin-top: 10px;
+  border-radius: 0 0 50px 50px;
 }

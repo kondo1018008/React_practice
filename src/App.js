@@ -24,6 +24,8 @@ function App() {
       <div id="itemA">A</div> 
       <div id="itemB">B</div> 
       <div id="itemC">C</div> 
+      <div id="itemD">D</div>
+      <div id="itemE">E</div>
   </div>
   );
 }
